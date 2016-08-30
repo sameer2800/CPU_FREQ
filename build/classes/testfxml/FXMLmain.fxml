@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="678.0" prefWidth="901.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testfxml.FXMLmainController">
+   <children>
+      <ImageView fitHeight="678.0" fitWidth="901.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/191919.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="293.0" fitWidth="526.0" layoutX="167.0" layoutY="197.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/3b5998.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="240.0" layoutY="58.0" prefHeight="67.0" prefWidth="381.0" text="              CPU HACKERS" textFill="#e8e2e2">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="200.0" layoutY="279.0" prefHeight="55.0" prefWidth="193.0" text="   System Password :" textFill="#ebe9e9">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="subbut" layoutX="206.0" layoutY="377.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="456.0" text="SUBMIT" />
+      <PasswordField fx:id="passw" layoutX="398.0" layoutY="279.0" prefHeight="48.0" prefWidth="264.0" />
+   </children>
+</AnchorPane>

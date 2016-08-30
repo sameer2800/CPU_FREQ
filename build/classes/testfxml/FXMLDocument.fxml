@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="685.0" prefWidth="901.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testfxml.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="214.0" layoutY="261.0" minHeight="16" minWidth="69" />
+      <ImageView fitHeight="689.0" fitWidth="904.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/9b539c.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="197.0" fitWidth="907.0" layoutX="-3.0" layoutY="492.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/003058.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="10.0" layoutY="357.0" prefHeight="234.0" prefWidth="308.0">
+         <children>
+            <Button layoutX="34.0" layoutY="144.0" mnemonicParsing="false" onAction="#roundfreqButtonAction" prefHeight="41.0" prefWidth="231.0" text="ROUND FREQ ALGO" />
+            <Button layoutX="34.0" layoutY="103.0" mnemonicParsing="false" onAction="#lowfreqButtonAction" prefHeight="41.0" prefWidth="231.0" text="LOW FREQUENCY" />
+            <Button layoutX="34.0" layoutY="62.0" mnemonicParsing="false" onAction="#highfreqButtonAction" prefHeight="41.0" prefWidth="231.0" text="HIGH FREQUENCY" />
+            <Button layoutX="34.0" layoutY="21.0" mnemonicParsing="false" onAction="#ondemandButtonAction" opacity="0.99" prefHeight="41.0" prefWidth="231.0" text="ONDEMAND" textAlignment="CENTER" textFill="#4b4c79" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="217.0" fitWidth="812.0" layoutX="45.0" layoutY="54.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/293e6a.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="99.0" layoutY="115.0" prefHeight="15.0" prefWidth="91.0" text="CORE 0" textFill="#ebe1e1">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="99.0" layoutY="152.0" text="CORE 1" textFill="#e4dcdc">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="99.0" layoutY="188.0" text="CORE 2" textFill="#eeebeb">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="99.0" layoutY="226.0" text="CORE 3" textFill="#fcefef">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="273.0" layoutY="74.0" prefHeight="19.0" prefWidth="117.0" text="Frequency" textFill="#ebe2e2">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="520.0" layoutY="74.0" prefHeight="19.0" prefWidth="108.0" text="Voltage" textFill="#e1dddd">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="701.0" layoutY="73.0" prefHeight="19.0" prefWidth="146.0" text="Temperature" textFill="#ebe1e1">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="freq0" layoutX="283.0" layoutY="115.0" text="Label" textFill="#c39715" />
+      <Label fx:id="freq1" layoutX="283.0" layoutY="152.0" text="Label" textFill="#c39715" />
+      <Label fx:id="freq2" layoutX="283.0" layoutY="188.0" text="Label" textFill="#c39715" />
+      <Label fx:id="freq3" layoutX="283.0" layoutY="226.0" text="Label" textFill="#c39715" />
+      <Label fx:id="volt0" layoutX="506.0" layoutY="115.0" text="Label" textFill="#c39715" />
+      <Label fx:id="volt1" layoutX="506.0" layoutY="152.0" text="Label" textFill="#c39715" />
+      <Label fx:id="volt2" layoutX="506.0" layoutY="188.0" text="Label" textFill="#c39715" />
+      <Label fx:id="volt3" layoutX="506.0" layoutY="226.0" text="Label" textFill="#c39715" />
+      <Label fx:id="temp0" layoutX="716.0" layoutY="115.0" text="Label" textFill="#c39715" />
+      <Label fx:id="temp1" layoutX="716.0" layoutY="155.0" text="Label" textFill="#c39715" />
+      <Label fx:id="temp2" layoutX="716.0" layoutY="188.0" text="Label" textFill="#c39715" />
+      <Label fx:id="temp3" layoutX="716.0" layoutY="226.0" text="Label" textFill="#c39715" />
+      <Button fx:id="toggle" layoutX="92.0" layoutY="594.0" mnemonicParsing="false" onAction="#startlogger" prefHeight="33.0" prefWidth="314.0" text="START LOG" />
+      <Button fx:id="viewer" layoutX="478.0" layoutY="594.0" mnemonicParsing="false" onAction="#viewlogger" prefHeight="33.0" prefWidth="308.0" text="VIEW LOG" />
+      <TextField fx:id="roundlow" layoutX="335.0" layoutY="502.0" prefHeight="33.0" prefWidth="117.0" promptText="Enter Low freq" />
+      <TextField fx:id="roundmid" layoutX="481.0" layoutY="503.0" prefHeight="33.0" prefWidth="125.0" promptText="Enter Mid freq" />
+      <TextField fx:id="roundhigh" layoutX="629.0" layoutY="502.0" prefHeight="33.0" prefWidth="125.0" promptText="Enter High freq" />
+      <Button fx:id="roundsubmit" layoutX="775.0" layoutY="501.0" mnemonicParsing="false" onAction="#roundsubmitbutton" prefHeight="33.0" prefWidth="108.0" text="SUBMIT" />
+      <Label fx:id="note" layoutX="297.0" layoutY="418.0" prefHeight="33.0" prefWidth="566.0" text="Label" textFill="#abcf21" />
+      <Label layoutX="371.0" layoutY="660.0" prefHeight="15.0" prefWidth="210.0" text="Copyrights @CPUHACKERS" textFill="#8b961e" />
+    </children>
+</AnchorPane>
